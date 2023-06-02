@@ -22,6 +22,7 @@ public class CorsFilter extends OncePerRequestFilter{
 			throws ServletException, IOException {
 		
 		response.setHeader("Access-Control-Allow-Origin", "*"); // we allow to everyone to send us requests
+		response.setHeader("Access-Control-Allow-Credentials", "true");
 		response.setHeader("Access-Control-Allow-Methods", "OPTIONS, GET, POST, PUT, DELETE, HEAD"); // what method we allow to use
 		response.setHeader("Access-Control-Allow-Headers", "authorization, Origin, Accept, content-type, Access-Control-Request-Method, Access-Control-Request-Headers");//what headers can be sent by client
 		
