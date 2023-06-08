@@ -40,7 +40,7 @@ public AdminService(CompanyRepository companyRepository, CouponsRepository coupo
 
 	@Override
 	public int login(String email, String password) {
-		if(email.equalsIgnoreCase("admin@admin.com") && password.equals("admin") ) {
+		if(email.equalsIgnoreCase("admin@admin.com") && password.equals("admin6886") ) {
 			System.out.println("welcome, you are log in as Admin");
 			return 1;
 		}
